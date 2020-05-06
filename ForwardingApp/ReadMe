@@ -1,0 +1,8 @@
+-   Uygulama Visual Studio Code üzerinde EF mimarisini kullanilarak yazdim.
+    Db: SQL Server Express
+
+-   Model class larim(Box,Order,Part) ile Migration yapisini kullanarak tablolari generate ettim.
+    Calistirdigim script ler
+
+            dotnet ef migrations add ForwardingAppDb
+            dotnet ef database update

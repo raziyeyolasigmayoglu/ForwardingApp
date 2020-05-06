@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ForwardingApp.Part>
+
+<table style="text-align: center; width:100%">
+  <tr>
+        <th> BOX ID </th>
+        <th> PART NUMBER </th>
+        <th> PART WEIGHT </th>
+        <th> PART COST </th>
+  </tr>
+@foreach (var item in Model) //Parts
+  {
+      <tr>
+      <td>
+        @Html.DisplayFor(modelItem => item.BoxId)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.PartNumber)
+      </td>
+       <td>
+        @Html.DisplayFor(modelItem => item.PartWeight)
+      </td>
+       <td>
+        @Html.DisplayFor(modelItem => item.PartCost)
+      </td>
+      </tr>
+  }
+</table>
